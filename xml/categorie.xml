@@ -83,6 +83,8 @@ Tel. 06 09 48 81 76 (à 20 min de Beaune) <a href="http://www.osteopathe-maury.f
 	<categorie slug="plan-beaune" id="5" color="965c9e">
 		<cat lang="fr" titre="Plan de Beaune"><![CDATA[<p>Pour découvrir le plan de Beaune et la mise en avant des points touristiques,</p>
 
-<p><a href="img/plan-de-beaune.pdf" class="lien">Cliquez ici</a></p>]]></cat>
+<p><a href="img/plan-de-beaune.pdf" class="lien" target="_blank">Cliquez ici</a></p>
+
+<p><img src="img/plan.jpg" alt="plan"></p>]]></cat>
 	</categorie>
 </categories>
