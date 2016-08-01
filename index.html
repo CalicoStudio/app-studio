@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Maury</title>
+    </head>
+    <body ontouchstart="">
+        <header>
+            <h1>Le Duplex des Tonneliers</h1>
+        </header>
+        <section id="accueil">
+            <ul id="list_lang"></ul>
+	        <div style="clear:both"></div>
+        </section>
+        <section id="cat">
+            <div class="retour">
+                <div class="terre bouton"><a href="index.html">&nbsp;</a></div>
+            </div>
+        	<div id="list_cat"></div>
+        	<div id="content" class="hidden descLang"></div>
+	        <div style="clear:both"></div>
+        </section>
+        <footer>Cette application est éditée par la société Calico | Version 1.0</footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/jquery.min.1.10.2.js"></script>
+        <script>
+			$(function(){
+				//récupération des drapeaux
+				var descPays=[];
+				$.ajax({
+					type: "GET",
+					url: "xml/pays.xml",
+					dataType: "xml",
+					complete : function(data, status) {
+						var products = data.responseXML;
+						var appendHtml = "";
+						$(products).find('lang').each(function(){
+							var slug = $(this).attr('slug');
+							var pays = $(this).find('nom').text();
+							appendHtml += '<li class="big-entry" id="w_'+slug+'"><img src="img/drapeau/'+slug+'.jpg" alt="'+pays+'" /></li>';
+							descPays[slug]=$(this).find("desc").text();
+						});
+						$("#list_lang").append(appendHtml);				
+				}});
+				//récupération des catégories
+				$("#cat").hide();
+				$.ajax({
+					type: "GET",
+					url: "xml/categorie.xml",
+					dataType: "xml",
+					complete : function(data, status) {
+						var categorie = data.responseXML;
+                        
+						var appendHtml = "<ul>"; var contentHtml="";
+						$(categorie).find('categorie').each( function() {
+							var slug=$(this).attr("slug"); var cat_id=$(this).attr("id"); var thisColor=$(this).attr("color");
+							appendHtml += '<li class="big-entry"><img src="img/categorie/'+slug+'.png" id="im'+slug+'" data-active="'+slug+'" class="img_cat" />';
+							$(this).find('cat').each(function(){
+                                contentHtml += '<div id="di'+slug+'" class="hidden color'+thisColor+'"><h2 style="color:#'+thisColor+'">'+$(this).attr("titre")+'</h2><div style="clear:both">'+$(this).text()+'</div></div>';
+								/*var lang = $(this).attr('lang');
+								var nom = $(this).text();
+								appendHtml += '<a href="interface.html?lang='+lang+'&cat='+cat_id+'" class="link" id="lk-cat-'+lang+'"></a>';*/
+							});
+							appendHtml += '</li>';
+						});
+						appendHtml += '</ul>';
+						var x;
+						for(x in descPays) {
+							appendHtml+='<div class="descLang" id="desc_'+x+'">'+descPays[x]+'</div>';
+						}
+						$("#list_cat").append(appendHtml);				
+						$("#content").append(contentHtml);				
+				}});
+				//lors du clic sur une langue
+				$("body").on("click", "#list_lang li", function() {
+					lang_ck=$(this).attr("id").substr(2,2);
+					$("#accueil").slideUp(400, function() {
+						$("#list_cat ul li a.link").not("#lk-cat-"+lang_ck).hide();
+						$("#list_cat>div").not("#desc_"+lang_ck).hide();
+						$("#cat").slideDown(800);
+					});
+				});
+				//lors d'un click sur une iamge des catégories // récupération du lien
+				$("body").on("click", ".img_cat", function() {
+                    //on remets les initiales images sur totues les cat
+                    $(".img_cat").each( function() {
+                        $(this).attr("src", "img/categorie/"+$(this).data("active")+".png");
+                    })
+                    //on mets 'lactive sur celle cliquée                   
+                    $(this).attr("src", "img/categorie/"+$(this).data("active")+"-active.png");
+                    //on afffiche la bonne div
+                    var what=$(this).attr("id").substr(2, $(this).attr("id").length);
+                    if($("#content").css("display")=="none") {
+                        $("#content").show();
+                        $("#list_cat .descLang").slideUp(400, function() {
+                            $("#di"+what).slideDown(800);
+                        });
+                    }
+                    else {
+                        $("#content>div").stop().slideUp(400);                        
+                        $("#di"+what).slideDown(800);
+                    }
+				});
+				//affichage du bouton retour à l'accueil
+				$("body").on("click", ".retour", function() {
+					$("#cat").slideUp(400, function() {
+						$("#list_cat a").show();
+						$("#list_cat>div").show();
+						$("#accueil").slideDown(800);
+					});
+				});
+			});
+		</script>
+    </body>
+</html>
