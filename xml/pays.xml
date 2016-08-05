@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <langs>
-	<lang slug="en"><nom>English</nom><desc><![CDATA[<p><strong>A la carte menu made by Thierry et Damien Broin</strong></p>
-<p>All our dishes are made on the spot only with plain and fresh produce. They are home-made (except*).</p>
-<p>Your meal is cooked by Damien andThierry Broin with quality plain and fresh produce in our modern kitchen according to hygiene standards, for your greatest pleasure.</p>
-<p>However some fresh produce may be missing.</p>
-]]></desc></lang>
 	<lang slug="fr"><nom>Français</nom><desc><![CDATA[<p>Nous vous souhaitons la bienvenue dans votre duplex, et sommes ravis de vous accueillir.<br>
 Cette tablette est à votre disposition durant votre séjour.<br>
 Vous y trouverez diverses informations sur votre logement ainsi que sur Beaune et ses alentours.</p>

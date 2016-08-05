@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <categories>
-	<categorie slug="le-duplex" id="1" color="537f70">
+	<categorie slug="le-duplex" id="1" color="">
 		<cat lang="fr" titre="Le Duplex"><![CDATA[<p>Votre duplex est équipé d'une connexion <strong>WIFI</strong>.<br>
 Le nom du réseau est <strong>Livebox-db7C</strong> et le mot de passe <strong>D11676DC59E6A9FEAA992A13A7</strong></p>
 
@@ -15,7 +15,7 @@ un mixeur ; un four ; un micro-onde ; un lave-vaisselle.</p>
 
 <p>- Dans la <strong>chambre</strong> : une TV dans la chambre avec chaines françaises.</p>]]></cat>
 	</categorie>
-	<categorie slug="bar-restaurant" id="2" color="b05339">
+	<categorie slug="bar-restaurant" id="2" color="">
 		<cat lang="fr" titre="Bar / Restaurant"><![CDATA[<table style="width:100%">
 <tr><td style="vertical-align:top; width:45%"><p>Quelques endroits pour boire un verre :<br><br>
 
@@ -35,7 +35,7 @@ L'Amarone ; pizzeria <a href="http://www.lamarone.fr" class="lien">www</a><br>
 L'Ecri'vin ; brasserie place Carnot</p></td></tr>
 </table>]]></cat>
 	</categorie>
-	<categorie slug="que-voir-que-faire" id="3" color="648db1">
+	<categorie slug="que-voir-que-faire" id="3" color="">
 		<cat lang="fr" titre="Que voir ? Que faire ?"><![CDATA[<p>Les hospices de Beaune : <a href="http://www.hospices-de-beaune.com/index.php/hospicesdebeaune/L-Hotel-Dieu/Le-Musee" class="lien">www</a><br>
 Patriarche Père et Fils : <a href="http://www.patriarche.com" class="lien">www</a><br>
 Le Marché au vin et sa galerie d'art : <a href="http://www.marcheauxvins.com" class="lien">www</a><br>
@@ -69,7 +69,7 @@ Envie de cadeaux pour votre famille ou vos amis :<br>
 <p>Ceci est une liste non exhaustive. Vous pouvez retrouver d'autres idées sur le site de l'office du tourisme <a href="http://www.beaune-tourisme.fr" class="lien">www</a></p>
 ]]></cat>
 	</categorie>
-	<categorie slug="informations-pratiques" id="4" color="e5a630">
+	<categorie slug="informations-pratiques" id="4" color="">
 		<cat lang="fr" titre="Informations pratiques"><![CDATA[<p>Le commissariat de police se situe 5 av charles de Gaulle, tel. : 0380250925</p>
 
 <p>Le service d'accueil des urgences , hôpital de Beaune, avenue guigone de salins 21200 Beaune</p>
@@ -80,7 +80,7 @@ Envie de cadeaux pour votre famille ou vos amis :<br>
 Tel. 06 09 48 81 76 (à 20 min de Beaune) <a href="http://www.osteopathe-maury.fr" class="lien">www</a>
 ]]></cat>
 	</categorie>
-	<categorie slug="plan-beaune" id="5" color="965c9e">
+	<categorie slug="plan-beaune" id="5" color="">
 		<cat lang="fr" titre="Plan de Beaune"><![CDATA[<p>Pour découvrir le plan de Beaune et la mise en avant des points touristiques...</p>
 
 <p><img src="img/plan.jpg" alt="plan"></p>]]></cat>
