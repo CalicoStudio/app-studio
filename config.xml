@@ -3,10 +3,10 @@
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="com.phonegap.bonapp"
         version="1.0.0">
-    <name>Maury</name>
+    <name>Studio des Tonneliers</name>
 
     <description>
-        Découvrez les endroits à voir sur Beaune et sa région
+        Découvrez les endroits à voir sur Beaune et sa région et votre studio
     </description>
 
     <author href="http://www.studio-calico.fr" email="support@studio-calico.fr">Calico</author>
