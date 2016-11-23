@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <categories>
-	<categorie slug="le-duplex" id="1" color="">
-		<cat lang="fr" titre="Le Duplex"><![CDATA[<p>Votre duplex est équipé d'une connexion <strong>WIFI</strong>.<br>
-Le nom du réseau est <strong>Livebox-db7C</strong> et le mot de passe <strong>D11676DC59E6A9FEAA992A13A7</strong></p>
+	<categorie slug="le-studio" id="1" color="">
+		<cat lang="fr" titre="Le Studio"><![CDATA[<p><strong>A votre disposition</strong> :</p>
 
-<p><strong>A votre disposition</strong> :</p>
-
-<p>- Dans la <strong>cuisine</strong> : une machine à expresso ; une bouilloire ; une machine à café situé dans le placard de l'entrée ;
+<p>- Dans la <strong>cuisine</strong> : une machine à expresso ; une bouilloire ; une machine à café ;
 un mixeur ; un four ; un micro-onde ; un lave-vaisselle.</p>
 
-<p>- Dans la <strong>salle de bain</strong> : un lave-linge ; un sèche-cheveux.</p>
+<p>- Dans la <strong>salle de bain</strong> : un nécessaire de toilette ; un sèche-cheveux.</p>
 
-<p>- Dans le <strong>salon</strong> : enceinte/radio bluetooth ; une TV avec chaines françaises et étrangères.</p>
-
-<p>- Dans la <strong>chambre</strong> : une TV dans la chambre avec chaines françaises.</p>]]></cat>
+<p>- Dans le <strong>salon</strong> : enceinte/radio bluetooth ; une TV avec chaines françaises.</p>]]></cat>
 	</categorie>
 	<categorie slug="bar-restaurant" id="2" color="">
 		<cat lang="fr" titre="Bar / Restaurant"><![CDATA[<table style="width:100%">

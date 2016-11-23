@@ -4,11 +4,11 @@ $mysql_server = Array();
 $mysql_server[0]["host"] = "localhost";
 $mysql_server[0]["user"] = "mhabitat";
 $mysql_server[0]["pass"] = "bGu0sD4Yk7";
-$mysql_server[0]["base"] = "appmenu";
+$mysql_server[0]["base"] = "appstudio";
 $mysql_server[1]["host"] = "localhost";
 $mysql_server[1]["user"] = "root";
 $mysql_server[1]["pass"] = "";
-$mysql_server[1]["base"] = "appgite";
+$mysql_server[1]["base"] = "appstudio";
 
 foreach ($mysql_server as $connect) {
 	if (@mysql_connect($connect["host"],$connect["user"],$connect["pass"])) {
